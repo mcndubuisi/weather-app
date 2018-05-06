@@ -2,7 +2,7 @@
 var request = require('request'); // Makes the API Call
 var argv = require('yargs').argv; // Allows user to define variables from the command line
 
-var apiKey = 'd1820b32713d44c0bd65efa727acad6a';
+var apiKey = '*******************';
 var city = argv.c || 'Lagos'; // Default City = Lagos
 var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
