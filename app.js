@@ -1,10 +1,10 @@
 //Dependencies required for the app
-var request = require('request'); // Makes the API Call
-var argv = require('yargs').argv; // Allows user to define variables from the command line
+const request = require('request'); // Makes the API Call
+const argv = require('yargs').argv; // Allows user to define variables from the command line
 
-var apiKey = '*******************';
-var city = argv.c || 'Lagos'; // Default City = Lagos
-var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+const apiKey = '*******************';
+const city = argv.c || 'Lagos'; // Default City = Lagos
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 
 request(url, function(err, response, body){
